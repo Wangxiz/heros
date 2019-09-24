@@ -11,6 +11,11 @@ Heros...
 * provides a simple programming interface, and
 * is fully generic, i.e., can be used to formulate program analysis problems for different programming languages.
 
+Using Heros
+-----------
+To get started with Heros, please consult our [wiki here](https://github.com/Sable/heros/wiki).
+
+
 Who are the developers of Heros?
 --------------------------------
 Heros was developed and is maintained by [Eric Bodden][2].
@@ -63,16 +68,18 @@ a dependency via Maven, Gradle, SBT, etc using the following coordinates:
   <dependency>
     <groupId>heros</groupId>
     <artifactId>heros</artifactId>
-    <version>1.0.0-SNAPSHOT</version>
+    <version>1.2.0-SNAPSHOT</version>
   </dependency>
 </dependencies>
 <repositories>
   <repository>
-    <id>soot-snapshot</id>
-    <name>soot snapshots</name>
-    <url>https://soot-build.cs.uni-paderborn.de/nexus/repository/soot-snapshot/</url>
+      <id>sonatype-snapshots</id>
+      <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+      <releases>
+          <enabled>false</enabled>
+      </releases>
   </repository>
-</repositories>	
+</repositories> 
 
 ```
 
